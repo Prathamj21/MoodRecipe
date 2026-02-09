@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Based Recipe Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍽️ Mood Based Recipe Suggestion</h1>
+    <p>Select your mood and get a recipe idea!</p>
+
+    <div class="moods">
+        <button onclick="showRecipe('happy')">😊 Happy</button>
+        <button onclick="showRecipe('sad')">😔 Sad</button>
+        <button onclick="showRecipe('stressed')">😣 Stressed</button>
+        <button onclick="showRecipe('romantic')">❤️ Romantic</button>
+        <button onclick="showRecipe('lazy')">😴 Lazy</button>
+        <button onclick="showRecipe('energetic')">⚡ Energetic</button>
+        <button onclick="showRecipe('sick')">🤒 Sick</button>
+        <button onclick="showRecipe('party')">🎉 Party</button>
+        <button onclick="showRecipe('healthy')">🥗 Healthy</button>
+        <button onclick="showRecipe('angry')">😡 Angry</button>
+    </div>
+
+    <div id="result" class="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
