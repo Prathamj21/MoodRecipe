@@ -7,8 +7,24 @@
 </head>
 <body>
 
-    <h1>🍽️ Mood Based Recipe Suggestion</h1>
+    <div class="header">
+        <h1>🍽️ Mood Based Recipe Suggestion</h1>
+        <div class="controls">
+            <button class="theme-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+            <button class="favorites-btn" onclick="toggleFavorites()">❤️ Favorites</button>
+        </div>
+    </div>
+    
     <p>Select your mood and get a recipe idea!</p>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." onkeyup="filterRecipes()">
+    </div>
+
+    <div id="favorites-panel" class="favorites-panel hidden">
+        <h2>Saved Recipes</h2>
+        <div id="favoritesList"></div>
+    </div>
 
     <div class="moods">
         <button onclick="showRecipe('happy')">😊 Happy</button>
